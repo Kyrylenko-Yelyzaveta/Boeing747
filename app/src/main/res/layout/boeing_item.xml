@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:id="@+id/cardItem"
+    android:background="@drawable/card_shape"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imView"
+        android:layout_margin="10dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/boeing_747"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtMainText"
+        android:text="@string/boeing_747"
+        app:layout_constraintEnd_toEndOf="@+id/imView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imView"
+        app:layout_constraintTop_toBottomOf="@+id/imView"
+        style="@style/header_txt_style" />
+
+    <TextView
+        android:id="@+id/txtDefaultText"
+        style="@style/header_txt_style"
+        android:text="@string/_1970"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtMainText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imView"
+        app:layout_constraintTop_toBottomOf="@+id/txtMainText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
